@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#421341"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#D5D2CC">
+
+        <EditText
+            android:id="@+id/edtInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input Number"
+            android:inputType="number"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtInput"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:text="100"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:shrinkColumns="*">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_height="100dp"
+                android:text="1"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_height="100dp"
+                android:text="2"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_height="100dp"
+                android:text="3"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_height="100dp"
+                android:text="+"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnC"
+                android:layout_height="100dp"
+                android:text="C"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_height="100dp"
+                android:text="4"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_height="100dp"
+                android:text="5"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_height="100dp"
+                android:text="6"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnMinus"
+                android:layout_height="100dp"
+                android:text="-"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnAC"
+                android:layout_height="100dp"
+                android:text="AC"
+                android:textSize="24sp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="2"
+            android:shrinkColumns="*">
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btn7"
+                    android:layout_height="100dp"
+                    android:text="7"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btn8"
+                    android:layout_height="100dp"
+                    android:text="8"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btn9"
+                    android:layout_height="100dp"
+                    android:text="9"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnMultiply"
+                    android:layout_height="100dp"
+                    android:text="*"
+                    android:textSize="24sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btn0"
+                    android:layout_height="100dp"
+                    android:layout_span="2"
+                    android:text="0"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnPoint"
+                    android:layout_height="100dp"
+                    android:text="."
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnDivide"
+                    android:layout_height="100dp"
+                    android:text="/"
+                    android:textSize="24sp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:text="="
+            android:textSize="30sp" />
+    </LinearLayout>
+</LinearLayout>
